@@ -15,7 +15,7 @@ pipeline {
 		stage('Checkout') {
 			steps {
 				sh 'mvn --version'
-				sh '$(whoami)'
+				sh 'whoami'
 				//sh 'usermod -aG docker jenkins'
 				//sh 'docker version'
 				echo "Build"
