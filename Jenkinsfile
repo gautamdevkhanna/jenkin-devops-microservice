@@ -16,7 +16,7 @@ pipeline {
 			steps {
 				sh 'mvn --version'
 				sh 'whoami'
-				//sh 'usermod -aG docker jenkins'
+				sh 'usermod -aG root jenkins'
 				//sh 'docker version'
 				echo "Build"
 				echo "PATH - $PATH"
