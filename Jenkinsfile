@@ -15,7 +15,7 @@ pipeline {
 		stage('Checkout') {
 			steps {
 				sh 'mvn --version'
-				sh usermod -a -G docker jenkins
+				//sh usermod -a -G docker jenkins
 				//sh 'docker version'
 				echo "Build"
 				echo "PATH - $PATH"
